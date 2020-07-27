@@ -1,9 +1,6 @@
 # lru-cache
 Python LRU caching algorithm.
 
-Excel Data Sheet:
-https://mavsuta-my.sharepoint.com/:x:/g/personal/robert_fabbro_mavs_uta_edu/EaRbe8SzUF1JmUh9FP8EMaoBwFI2viZtJVOVgpLXkfCWZQ?e=Va86i6
-
 Data:
 
 Sprite
