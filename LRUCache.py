@@ -27,8 +27,9 @@ capacity = int(capacity)
 
 cache = LRUCache(capacity)
 
-traceString = input("Trace (Example: 1 2 3): ")
-trace = [int(s) for s in traceString.split(' ')]
+traceString = input("Trace: ")
+trace = [int(s) for s in traceString.strip().split()]
+print(trace)
 
 for i in range(len(trace)):
     cache.set(trace[i], trace[i])
