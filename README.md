@@ -4,4 +4,4 @@ Python LRU caching algorithm.
 Data:
 
 Sprite
-![Sprite](https://imgur.com/a/rVBmhQ3)
+![Sprite](https://imgur.com/jw59ttj)
