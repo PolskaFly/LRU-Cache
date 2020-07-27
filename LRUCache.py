@@ -4,7 +4,6 @@ class LRUCache:
     def __init__(self, capacity:int):
         self.capacity = capacity
         self.cache = collections.OrderedDict()
-        self.temp = []
         self.faults = 1
         self.hits = -1
 
