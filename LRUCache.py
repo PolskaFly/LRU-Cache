@@ -20,13 +20,14 @@ class LRUCache:
             self.cache[key] = value
             self.faults += 1
 
+
 trials = input("Trials: ")
 trials = int(trials)
 
 trace = []
 
 with codecs.open("sprite.trc", "r", "UTF8") as inputFile:
-    inputFile=inputFile.readlines()
+    inputFile = inputFile.readlines()
 for line in inputFile:
     trace.append(int(line))
 
