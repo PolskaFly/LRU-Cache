@@ -5,27 +5,27 @@ class LRUCache:
     def __init__(self, capacity:int):
         self.capacity = capacity
         self.cache = collections.OrderedDict()
-        self.faults = 1
-        self.hits = -1
+        self.faults = 0
+        self.hits = 0
 
-    def set(self, key:int, value:int) -> None:
-        self.cache[key] = value
-        self.cache.move_to_end(key)
-
-        if len(self.cache) < self.capacity:
-            self.faults += 1
-        elif len(self.cache) > self.capacity:
-            self.cache.popitem(last=False)
-            self.faults += 1
-        else:
+    def set(self, key:int, value:int):
+        if key in self.cache:
             self.hits += 1
+            self.cache.move_to_end(key)
+        elif len(self.cache) < self.capacity:
+            self.faults += 1
+            self.cache[key] = value
+        elif len(self.cache) >= self.capacity:
+            self.cache.popitem(last=False)
+            self.cache[key] = value
+            self.faults += 1
 
 trials = input("Trials: ")
 trials = int(trials)
 
 trace = []
 
-with codecs.open("multi2.trc", "r", "UTF8") as inputFile:
+with codecs.open("sprite.trc", "r", "UTF8") as inputFile:
     inputFile=inputFile.readlines()
 for line in inputFile:
     trace.append(int(line))
