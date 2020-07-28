@@ -7,7 +7,7 @@ Sprite
 ![Sprite](https://github.com/PolskaFly/lru-cache/blob/master/Data%20Images/Sprite.png)
 
 Multi1
-![Multi1](https://github.com/PolskaFly/lru-cache/blob/master/Data%20Images/Mutli1.png)
+![Multi1](https://github.com/PolskaFly/lru-cache/blob/master/Data%20Images/Multi1.png)
 
 
 Multi2
